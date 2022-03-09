@@ -1,0 +1,196 @@
+/* Universal box sizing with inheritance */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    
+  }
+
+/* background setup */
+
+.index {
+
+    background: url(earth.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.orange {
+    background-color: #FC9C54;
+}
+
+.sunset {
+    background-color: #FFAE41;
+}
+
+
+h2 {
+    color: black;
+    text-align: center;
+    font-size: 300%
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: ) {
+    
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    font-size: 120%;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #4B3D60;
+    text-decoration: none;
+    display: block;
+    font-size: 125%;
+}
+
+nav a:hover {
+    color: #FFE373;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left ul li {
+    float: left;
+}
+
+.nav-right ul li {
+    float: right;
+}
+
+
+
+
+/* About section */
+
+.box1 {
+    background: black; 
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.box1 p {
+    color: white;
+}
+
+.icons {
+    color: black;   
+    font-size: 500%; 
+    display: inline-block;
+}
+
+
+
+
+
+/* skills.html part */
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+
+
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.design {width: 60%; background-color: #808080;} /* Dark Grey */
+
+.level {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 150%;
+}
+
+
+
+
+
+/* contact setion */
+
+#email {
+    text-align: center;
+}
+
+.fancy {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(20, 44, 180);
+    animation-name: lights;
+    animation-duration: 5s;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+@keyframes lights {
+    0% {
+        background: green;
+    }
+    25% {
+        background: yellow;
+    }
+    50% {
+        background: red;
+    }   
+    100% {
+        background: purple;
+    }
+
+}
+
+
+}
